@@ -131,7 +131,7 @@ footer{
   }
 }
 
-@media (width > 375px) {
+@media (width > 430px) {
 
   body{
     height: 100vh;
