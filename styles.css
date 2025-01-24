@@ -130,3 +130,72 @@ footer{
     color: var(--Very-Dark-Magenta);
   }
 }
+
+@media (width > 375px) {
+
+  body{
+    height: 100vh;
+    background-image: url("images/bg-pattern-top-desktop.svg"), url("images/bg-pattern-bottom-desktop.svg");
+    background-position: left top, right bottom;
+  }
+
+  main{
+    min-width: 900px;
+  }
+
+  .hero{
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+    text-align: left;
+    margin-top: 20px;
+
+    & .hero__heading{
+      flex-basis: 50%;
+      max-width: 350px;
+
+      & h1{
+        font-size: 3rem;
+      }
+    }
+
+    & .hero__ratings{
+      flex-basis: 50%;
+      max-width: 400px;
+      justify-content: center;
+
+      & .hero__ratings__pill{
+        display: flex;
+        flex-direction: row;
+        max-width: 340px;
+        align-items: center;
+        justify-content: space-around;
+      }
+
+      & .hero__ratings__pill:nth-child(2){
+        margin-left: 40px;
+      }
+
+      & .hero__ratings__pill:nth-child(3){
+        margin-left: 80px;
+      }
+    }
+  }
+
+  .reviews{
+    flex-direction: row;
+    gap: 18px;
+
+    & .review_card{
+      height: fit-content;
+    }
+
+    & .review_card:nth-child(2){
+      margin-top: 40px;
+    }
+
+    & .review_card:nth-child(3){
+      margin-top: 80px;
+    }
+  }
+}
