@@ -115,3 +115,18 @@ main{
     }
   }
 }
+
+footer{
+  margin: 12px 0;
+  font-size: 12px;
+  color: var(--Dark-Grayish-Magenta);
+
+  & a{
+    color: var(--Soft-Pink);
+    text-decoration: none;
+  }
+
+  & a:hover{
+    color: var(--Very-Dark-Magenta);
+  }
+}
